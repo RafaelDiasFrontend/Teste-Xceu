@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+  .h1 {
+    font-family: 'Avenir Next LT Pro';
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .h1-custom{
+    font-size: 1.6rem!important;
+    letter-spacing: 0.13em!important;
+    line-height: 1.5;
+  }
+.h3-custom {
+  font-size: 0.98rem;
+  line-height: 1.3;
+  }
+.h2-custom {
+    font-size: 1.2rem!important;
+    line-height: 1.6!important;
+  }
+.p{
+  font-size: 0.90rem!important;
+  line-height: 1.79em;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+  }
+.justify-p{
+  text-align: justify;
+  text-align-last: center;
+  text-indent: 0;
+  font-size: 0.90rem!important;
+  line-height: 1.79em;
+  font-weight: 400;
+  }
+.d-mobile {
+  display: none!important;
+  }
+.logo-default {
+  max-width: 148px;
+  height: auto;
+  margin: 5px!important;
+  }
+.mg-custom {
+  margin-top: 0;
+  margin-bottom: 0.64em;
+  }
+}

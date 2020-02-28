@@ -1,0 +1,77 @@
+<template>
+    <div class="frame">
+	<div class="button">
+		<span>Hover Me</span>
+		<svg>
+		<polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+		<polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+	</svg>
+	</div>
+
+</div>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style scoped>
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #ffa114;
+  color: white;
+  font-family: Raleway, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button svg {
+  height: 55px;
+  width: 150px;
+  fill: none;
+  stroke-width: 5;
+}
+.button svg .o1 {
+  stroke: rgba(255, 179, 65, 0.7);
+  fill: #ffa114;
+  transition: all 1s ease-in-out;
+}
+.button svg .o2 {
+  stroke: white;
+  stroke-dasharray: 20 420;
+  stroke-dashoffset: 20;
+  transition: all 1s ease-in-out;
+}
+.button span {
+  position: absolute;
+  margin: auto 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.button:hover .o1 {
+  fill: rgba(204, 129, 16, 0.3);
+}
+.button:hover .o2 {
+  stroke-dashoffset: -420;
+}
+</style>
